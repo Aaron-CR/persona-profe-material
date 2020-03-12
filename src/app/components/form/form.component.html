@@ -1,0 +1,30 @@
+<h1 mat-dialog-title><strong>{{action}}</strong></h1>
+<div mat-dialog-content>
+  <form [formGroup]="form" novalidate>
+    <input hidden formControlName="id">
+
+    <mat-form-field class="form-element">
+      <input matInput placeholder="{{action}} Nombre" formControlName="nombre">
+      <mat-error *ngIf="errorHandling('nombre', 'required')">
+        Debe proporcionar un<strong> nombre.</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form-element">
+      <input matInput placeholder="{{action}} Apellido" formControlName="apellido">
+      <mat-error *ngIf="errorHandling('apellido', 'required')">
+        Debe proporcionar un<strong> apellido.</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form-element">
+      <input matInput type="number" placeholder="{{action}} DNI" formControlName="dni">
+      <mat-error *ngIf="errorHandling('dni', 'required')">
+        Debe proporcionar un<strong> DNI.</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="onAction()">{{action}}</button>
+    <button mat-raised-button color="warn" (click)="onCancel()">Cancelar</button>
+  </form>
+</div>
