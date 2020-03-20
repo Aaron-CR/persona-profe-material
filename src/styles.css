@@ -8,18 +8,3 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.mat-column-actions {
-  flex: 0 0 60px !important;
-}

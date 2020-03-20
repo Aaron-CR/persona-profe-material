@@ -14,9 +14,9 @@ export class FormComponent implements OnInit {
   public form: FormGroup;
 
   constructor(
+    @Optional() @Inject(MAT_DIALOG_DATA) public data: Persona,
     public dialogRef: MatDialogRef<FormComponent>,
-    public formBuilder: FormBuilder,
-    @Optional() @Inject(MAT_DIALOG_DATA) public data: Persona
+    public formBuilder: FormBuilder
   ) {
     this.localData = { ...data };
   }
