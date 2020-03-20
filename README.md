@@ -1,6 +1,40 @@
 # Persona Profe Material
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
+
+### Ramas
+
+> **master:**
+>
+> En esta rama solo se usa Angular Material y todos los estilos son escritos en CSS
+>
+>*Hojas de estilos usadas: CSS*
+
+> **no-css:**
+>
+> En esta rama solo se usa Angular Material, no hay estilos escritos
+>
+>*Hojas de estilos usadas: CSS*
+
+> **bootstrap-material:**
+>
+> En esta rama se ha instalado Bootstrap junto con Angular Material, no hay estilos definidos
+>
+>** Requiere la dependencia de bootstrap **
+>
+>npm install bootstrap
+>
+>*Hojas de estilos usadas: SCSS*
+
+> **bootstrap-material-finish:**
+>
+> En esta rama se ha instalado Bootstrap junto con Angular Material, se han definido los estilos usando las clases de Bootstrap
+>
+>** Requiere la dependencia de bootstrap **
+>
+>npm install bootstrap
+>
+>*Hojas de estilos usadas: SCSS*
   
 ## Pasos para instalar el proyecto
 
