@@ -11,7 +11,7 @@ import { DialogService } from 'src/app/core/services/dialog.service';
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
-  styleUrls: ['./table.component.css']
+  styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
   public title = 'Tabla de Personas';

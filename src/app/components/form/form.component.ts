@@ -6,7 +6,7 @@ import { Persona } from 'src/app/shared/models/persona';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+  styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
   public localData: any;
